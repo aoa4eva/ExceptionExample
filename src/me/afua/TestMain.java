@@ -17,7 +17,12 @@ public class TestMain {
         {
             System.out.println("This is an exception");
             exceptionThown = true;
+        }finally {
+            System.out.println("This will be shown regardless of whether an exception is thrown");
         }
         }while(exceptionThown);
+
+
+        System.out.println("This line will not be displayed if an exception is thown.");
     }
 }
